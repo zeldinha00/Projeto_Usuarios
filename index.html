@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Usuários - Treinamentos</title>
+  <title>Usuários - Hcode Treinamentos</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
@@ -21,9 +21,9 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini">RoS</span>
+      <span class="logo-mini">HCODE</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">RoS</span>
+      <span class="logo-lg">HCODE</span>
     </a>
 
     <!-- Header Navbar -->
@@ -139,7 +139,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body no-padding">
-              <table class="table table-striped" >
+              <table class="table table-striped">
                 <thead>
                   <tr>
                     <th style="width: 10px">Foto</th>
@@ -151,8 +151,9 @@
                   </tr>
                 </thead>
                 <tbody id="table-users">
- 
-                
+
+                                   
+                  
                 </tbody>
               </table>
             </div>
@@ -195,7 +196,7 @@
             <!-- ./col -->
           </div>
 
-          <div class="box box-success">
+          <div class="box box-success" id="box-user-create">
             <div class="box-header with-border">
               <h3 class="box-title">Novo Usuário</h3>
             </div>
@@ -211,12 +212,12 @@
                   <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM">
-                      <input type="radio" id="exampleInputGenderM" name="gender" checked>
+                      <input type="radio" id="exampleInputGenderM" name="gender" value="M" checked>
                       Masculino</label>
                   </div>
                   <div class="radio">
                     <label for="exampleInputGenderF">
-                      <input type="radio" id="exampleInputGenderF" name="gender">
+                      <input type="radio" id="exampleInputGenderF" name="gender" value="F">
                       Feminino</label>
                   </div>
                 </div>
@@ -496,7 +497,7 @@
             </form>
           </div>
 
-          <div class="box box-primary" style="display: none;">
+          <div class="box box-primary" id="box-user-update" style="display:none;">
             <div class="box-header with-border">
               <h3 class="box-title">Editar Usuário</h3>
             </div>
@@ -512,13 +513,13 @@
                   <label>Gênero</label>
                   <div class="radio">
                     <label for="exampleInputGenderM">
-                      <input type="radio" id="exampleInputGenderM" name="gender" checked>
-                      Masculino</label>
+                      <input type="radio" id="exampleInputGenderM" name="gender" value="M" checked> Masculino
+                    </label>
                   </div>
                   <div class="radio">
                     <label for="exampleInputGenderF">
-                      <input type="radio" id="exampleInputGenderF" name="gender">
-                      Feminino</label>
+                      <input type="radio" id="exampleInputGenderF" name="gender" value="F"> Feminino
+                    </label>
                   </div>
                 </div>
                 <div class="form-group">
@@ -781,6 +782,7 @@
                   <input type="password" required class="form-control" id="exampleInputPassword" placeholder="Crie uma senha" name="password">
                 </div>
                 <div class="form-group">
+                  <img src="dist/img/boxed-bg.jpg" class="photo" style="max-height: 128px;">
                   <label for="exampleInputFile">Foto</label>
                   <input type="file" id="exampleInputFile" name="photo">
                 </div>
@@ -790,10 +792,10 @@
                   </label>
                 </div>
               </div>
-              <!-- /.box-body -->          
+              <!-- /.box-body -->
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Salvar</button>
-                <button type="button" class="btn btn-default">Cancelar</button>
+                <button type="button" class="btn btn-default btn-cancel">Cancelar</button>
               </div>
             </form>
           </div>
